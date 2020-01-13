@@ -29,6 +29,7 @@ public class OrderController {
 
     @GetMapping("order")
     public ResponseEntity getDiscountPrice2(){
+        logger.info("getDiscountPrice2 Started");
         Order order = new Order();
         order.setUserId(1L);
         order.setItemId(1L);
